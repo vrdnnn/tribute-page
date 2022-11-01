@@ -1,7 +1,7 @@
 const myName = 'moni';
 let myAge = 19;
 let x = 5;
-let y = 'valor';
+let y = 7;
 var likesMusic = true;
 
 
