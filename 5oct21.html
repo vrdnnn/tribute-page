@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> S E LE C T O R E S </title>
+
+
+    <!--Copiar link de google fonts.
+        seleccionar/ type tester/ select all styles/copiar links
+         ***Tarea: elegir un nuevo tipo de letra
+         este es el link de letra de ejemplo proporcionado:
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+     -->
+
+
+    <!--Este es mi estilo seleccionado:-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+    <!--Iconoco de lineicons/doc/CDN-->
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+
+
+    <style>
+        html,
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            background-color: #e3b1a6;
+            color: #331208;
+            font-family: 'roboto', sans-serif;
+        }
+
+        #header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #main-content-container {
+            display: flex;
+        }
+
+        #links-sidebar {
+            flex: 2;
+            background-color: #bd62b5;
+        }
+
+        #main-content {
+            flex: 6;
+            background-color: bisque;
+            padding: 10px 20px 10px 20px;
+
+        }
+
+        .main-content-img {
+
+            width: 15%;
+
+        }
+
+        #footer {
+            display: flex;
+            padding: 0px 20px 20px 20px;
+            margin-top: auto;
+            background-color: brown;
+        }
+
+        .footer--section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        input[type=email],
+        textarea {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 3px solid wheat;
+        }
+
+        input[type=submit] {
+            background: #bd62b5;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="header">
+        <h1><em>Clase 5</em></h1>
+        <p>viernes 21 oct</p>
+    </header>
+
+    <nav id="nav">
+        Menú
+    </nav>
+
+    <div id="main-content-container">
+        <aside id="links-sidebar">
+            Links relacionados
+        </aside>
+
+
+        <section id="main-content">
+
+            <img src="flor.png"alt="flor" class="main-content-img">
+            <h3>Biografía</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis, suscipit neque. Voluptatum illo
+                accusantium consectetur deserunt est, quam eos exercitationem consequatur neque praesentium ad.
+                Dignissimos iste officia esse quia? Aut.</p>
+
+            <h4>Datos curiosos</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo minus officiis reprehenderit eligendi nemo
+                nostrum consequatur esse quae adipisci, praesentium accusamus ipsum ex voluptas, ad, est aliquid.
+                Quaerat, at ab!</p>
+
+        </section>
+    </div>
+
+    <footer id="footer">
+        <div class="footer--section">
+            <h2>Mis redes</h2>
+            <!--Saque el link del icono de Lineicons, sin necesidad de descargar la imagen-->
+            <i class="lni lni-discord"></i>
+        </div>
+
+        <div class="footer--section">
+            <h2>Contacto</h2>
+            <div>
+                <form>
+                    <label for="contactEmail"> Correo electrónico:</label>
+                    <input id="contactEmail" required type="email" placeholder="Ingresa tu correo electrónico">
+
+                    <label for="contactMessage"> Mensaje:</label>
+                    <textarea id="contactMessage" required rows="4" cols="50"> </textarea>
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+
+        </div>
+
+        <div class="footer--section">
+            <h2>Otros sitios</h2>
+        </div>
+    </footer>
+</body>
+
+</html>
