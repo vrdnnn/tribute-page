@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Links para tipo de letra-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--Link de iconos en linea-->
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Layout|Página atributo</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function myFunction() {
+            const navigationBar = document.getElementById("navigation-bar");
+            if (navigationBar.className === "navigation-bar") {
+                navigationBar.className += " responsive";
+            } else {
+                navigationBar.className = "navigation-bar";
+            }
+        }
+    </script>
+
+
+</head>
+<body>
+<header id="header">
+    <h1> Grace Hopper </h1>
+    <p>1906 - 1992</p>
+</header>
+
+<nav id="navigation-bar" class="navigation-bar">
+    <ul>
+        <li><a class="active" href="index.html">Biografía</a></li>
+        <li><a href="publicaciones.html">Publicaciones</a></li>
+        <li><a href="premios.html">Premios</a></li>
+        <li class="menu__hamburger-icon">
+            <a href="javascript:void(0);" onclick="myFunction()">
+                <i class="lni lni-menu"></i>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<div id="main-content-container">
+    <aside id="links-sidebar">
+        <h2>Sitios relacionados</h2>
+        <ul>
+            <li><a href="index2.html">Adda Lovelace</a></li>
+            <li><a href="index3.html">Wangari Maathai</a></li>
+
+        </ul>
+    </aside>
+    
+    <section id="main-content">
+        
+        <h2> <em> B i o g r a f í a</em>  </h2>
+
+        <p> Grace Murray Hopper nació el 9 de diciembre de 1906, en Nueva York, y murió en Arlington, Virginia (USA) el 1 de enero de 1992. Grace Hopper fue un distinguido oficial de la marina estadounidense y una destacada científica computacional. Hopper fue uno de los programadores del primer gran ordenador, el Mark I. Su trabajo dió lugar al primer lenguaje compilador para ordenadores. También trabajó en el desarrolo del COBOL, uno de los primeros lenguajes de programación.
+
+            Acuñó el término "bug" (chinche, bicho) para referirse a un error de programación, cuando descubrió una pequeña mariposa dentro de los circuitos que hacía cometer errores de ejecución. En 1973, aunque en la reserva, fue la primera mujer en llegar a capitán de navío de la marina estadounidense.</p> 
+
+        <img src="hopper.png" alt="Grace Hopper" class="main-content__img--full-width">
+
+        
+        <p>Grace Brewster Murray se graduó en la universidad de Vassar, con un B.A. en matemáticas en 1928 y trabajó bajo la dirección del algebrista Oystein Ore en Yale para su M.A., en 1930, y su Ph.D. (tesis doctoral) en 1934. </p>
+
+        <p>Hopper procedía de una familia con tradición militar, así renunció a su puesto en la universidad de Vassar para entrar en la Navy WAVES (Women Accepted for Voluntary Emergency Service) en diciembre de 1943. Fue nombrada teniente en julio de 1944 y destinada al Bureau of Ordenance Computation Project de la Harvard University, fue la tercera persona en unirse al equipo de investigación del profesor y teniente de la reserva naval Howard H. Aiken. El primer trabajo con la Mark I (ordenador electromecánico) fue calcular los coeficientes del desarrolo en serie del arco coseno.</p>
+        <p>Fue uno de los primeros ingenieros de software y, realmente, uno de los más ha influido en el desarrolo del mundo de la computación. Quizás su contribución más conocida sea la invención del compilador, un programa intermedio que traduce instrucciones del lenguaje natural (inglés) al lenguaje interno (instrucciones de código máquina)</p>
+    </section>
+</div>
+
+<footer id="footer">
+    <div class="footer__social footer__section">
+        <h2>Mis redes</h2>
+
+        <div class="social__networks">
+            <div class="social__network">
+                <span class="social__icon-container"><i class="lni lni-github-original social__icon"></i></span>
+                <span class="social__icon-handler"> <a href="https://github.com/vrdnnn"> vrdnnn </a> </span>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="footer__contact-form footer__section">
+        <h2>Contacto</h2>
+        <div>
+            <form>
+                <label for="contactEmail"> Correo electronico:</label>
+                <input id="contactEmail" required type="email" placeholder="Ingresa tu correo electronico">
+
+                <label for="contactMessage"> Mensaje:</label>
+                <textarea id="contactMessage" required rows="4" cols="50"> </textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+    <div class="footer__more-sites footer__section">
+        <h2>Otros de mis sitios</h2>
+        <ul>
+            <li><a href="sitio1.html">Sitio 1</a></li>
+
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

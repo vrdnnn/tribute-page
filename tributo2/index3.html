@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Links para tipo de letra-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--Link de iconos en linea-->
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Layout|Página atributo</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function myFunction() {
+            const navigationBar = document.getElementById("navigation-bar");
+            if (navigationBar.className === "navigation-bar") {
+                navigationBar.className += " responsive";
+            } else {
+                navigationBar.className = "navigation-bar";
+            }
+        }
+    </script>
+
+
+</head>
+<body>
+<header id="header">
+    <h1> Wangari Maathai </h1>
+    <p>1940 -2011</p>
+</header>
+
+<nav id="navigation-bar" class="navigation-bar">
+    <ul>
+        <li><a class="active" href="index3.html">Biografía</a></li>
+        <li><a href="publicaciones3.html">Publicaciones</a></li>
+        <li><a href="premios3.html">Premios</a></li>
+        <li class="menu__hamburger-icon">
+            <a href="javascript:void(0);" onclick="myFunction()">
+                <i class="lni lni-menu"></i>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<div id="main-content-container">
+    <aside id="links-sidebar">
+        <h2>Sitios relacionados</h2>
+        <ul>
+            <li><a href="index.html">Grace Hopper</a></li>
+            <li><a href="index2.html">Adda Lovelace</a></li>
+
+        </ul>
+    </aside>
+    
+    <section id="main-content">
+        
+
+        <h2> <em> B i o g r a f í a</em>  </h2>
+        <p>Wangari Maathai nació el 1 de abril de 1940 en Nyeri, Kenia.
+
+            Fue la primer mujer que consiguió un Nobel en el continente africano, la primera mujer que obtuvo un doctorado en África Oriental y Central, la primera profesora en Anatomía veterinaria y más tarde decana de su facultad en la Universidad de Nairobi.
+            
+            En 1978 pasó una estadía de estudios en Alemania becada por el DAAD.</p>
+        <img src="maathai.png" alt="Adda Lovelace" class="main-content__img--full-width">
+        <p>Viceministra del Medio Ambiente en Kenia, En 1977 fundó el Green Belt Movement, el Movimiento del "Cinturón Verde", dirigido a proteger la biodiversidad. Gracias a su iniciativa fueron plantados 30 millones de árboles, además de permitir la creación de miles de empleos y el fortalecimiento de la imagen de la mujer en la sociedad.</p>
+        <p>Con gran reconocimiento internacional por su incansable defensa de la democracia, de los Derechos Humanos y del medio ambiente, lo que le llevó a dirigirse en varias ocasiones a la ONU y a intervenir, en nombre de los derechos de las mujeres, en la cumbre quinquenal de la tierra de la Asamblea General de Naciones Unidas.</p>
+
+    </section>
+</div>
+
+<footer id="footer">
+    <div class="footer__social footer__section">
+        <h2>Mis redes</h2>
+
+        <div class="social__networks">
+            <div class="social__network">
+                <span class="social__icon-container"><i class="lni lni-github-original social__icon"></i></span>
+                <span class="social__icon-handler"> <a href="https://github.com/vrdnnn"> vrdnnn </a> </span>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="footer__contact-form footer__section">
+        <h2>Contacto</h2>
+        <div>
+            <form>
+                <label for="contactEmail"> Correo electronico:</label>
+                <input id="contactEmail" required type="email" placeholder="Ingresa tu correo electronico">
+
+                <label for="contactMessage"> Mensaje:</label>
+                <textarea id="contactMessage" required rows="4" cols="50"> </textarea>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+    <div class="footer__more-sites footer__section">
+        <h2>Otros de mis sitios</h2>
+        <ul>
+            <li><a href="sitio1.html">Sitio 1</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
